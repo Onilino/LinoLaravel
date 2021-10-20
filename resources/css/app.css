@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+html {
+    overflow-y: auto;
+}
+
+.rotate {
+    transform: rotate(-30deg);
+}
+
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.content p, ul {
+    @apply max-w-2xl px-3 mx-auto my-8 text-gray-900 leading-normal;
+}
+
+.content ul {
+    @apply pl-8;
+}
+
+.content h3 {
+    @apply max-w-2xl px-3 mx-auto mb-12 mt-24;
+}
+
+.content h4 {
+    @apply max-w-2xl px-3 mx-auto my-12;
+}
+
+.content h5 {
+    @apply max-w-2xl px-3 mx-auto mb-8;
+}
+
+.content pre {
+    @apply my-8;
+}
+
+.content pre code {
+    @apply block max-w-2xl px-3 mx-auto leading-loose overflow-auto;
+}
+
+.content p code {
+    @apply px-2 py-1 rounded-lg font-mono;
+}
+
+.content a {
+    @apply text-blue-500;
+}
